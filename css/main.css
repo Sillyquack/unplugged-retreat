@@ -356,6 +356,20 @@ min-height: 500px;
   background-color: #527158;
 }
 
+.map-container figure {
+  position: relative;
+  padding-bottom: 125%;
+  height: 0;
+  overflow: hidden;
+ }
+ .map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+
 .contact-section {
   display: flex;
   flex-flow: row wrap;
@@ -498,7 +512,7 @@ min-height: 500px;
   }
   h2 {
     font-size: 2.25em;
-    line-height: 1.3332em;
+    line-height: 1.333em;
   }
   h3 {
     font-size: 1.500em;
@@ -629,31 +643,35 @@ footer .p {
 
   /* About Page */
   
-     .mission-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 20px
-    }
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }  
   
-    .mission-content p {
-      width: 45%;
-    }
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map-container figure {
+    padding-bottom: 45.5%;
+  }
   
-    .contact-section .content-wrapper h2 {
-      width: 80%;
-    }
-  
-    .contact-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
     .contact-content h4 {
       font-size: 1.5em;
     }
-  
+
     /* FAQ Page */
   
     .faq .content-wrapper {
@@ -745,47 +763,17 @@ footer .p {
 
    /* ------------ About Page ------------------- */
 
+   .map figure {
+    padding-bottom: 37.5%;
+  }
+   
    .mission h2, .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
    }
 
-   .mission {
-    background-color: #527158;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-
-   .contact-content h4 {
+  .contact-content h4 {
     font-size: 1.875em;
-  }
-
-  .map-container figure {
-    position: relative;
-    padding-bottom: 125%;
-    height: 0;
-    overflow: hidden;
-   }
-   .map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   }
-
-   .contact-section {
-    background-color: #2a423a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-
-  .contact-content p {
-    margin: 0;
   }
 
   /* ==========================================================================
