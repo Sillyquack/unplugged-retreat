@@ -226,6 +226,10 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
@@ -643,6 +647,11 @@ footer .copyright {
 
 footer .p {
   line-height: 1.285em;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
 }
 
   /* About Page */
