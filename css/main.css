@@ -104,6 +104,7 @@ ul,
 ol {
  list-style-type: none;
  margin: 0;
+ padding: 0;
 }
  
 a {
@@ -344,6 +345,8 @@ min-height: 500px;
 	font-size: 3.75em;
     margin-bottom: 40px;
 }
+
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -377,7 +380,7 @@ min-height: 500px;
   height: 0;
   overflow: hidden;
  }
- 
+
  .map-container iframe {
   position: absolute;
   top: 0;
@@ -596,7 +599,7 @@ aside .content-wrapper .form-description, aside .content-wrapper .form {
 }
 
 .features article {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
