@@ -90,7 +90,7 @@ textarea {
 /* General Styles */
  
 html {
-	font-size: 16px;
+	font-size: 1rem;
 }
  
 body {
@@ -98,6 +98,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
  
 ul, 
@@ -128,8 +129,8 @@ h4 {
 }
  
 p {
-	font-size: 0.875em;
-  line-height: 1.285em;
+	font-size: .875em;
+  line-height: 1.285;
 }
  
 address {
@@ -151,51 +152,33 @@ figure {
 
 /* ----------- Base Header - Footer Styles ---------------------------------------*/
 
-header,
-footer {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
-background-color: #202322;
-}
-
-
-/*Header Styles*/
-
 header {
-padding: 15px 0;
+  background-color: #202322;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 header figure {
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .header-divider {
   background: #3a3a3a;
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
-
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
@@ -203,20 +186,30 @@ header nav {
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 header nav ul li {
   font-size: 1.125em;
 }
 
-/* Footer */
-
 footer {
+  background-color: #202322;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .contact {
@@ -229,27 +222,18 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons p i {
-  font-size: 1.3125em;
-}
-
 footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #527158;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer .content-wrapper {
-  width: 55%;
-  margin: 50 px 0;
-}
-
-footer .p {
-  margin: 0;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -259,28 +243,24 @@ footer .copyright {
 /* ----------- Mobile Styles - Homepage ---------------------------------------*/
 
 .hero-area {
-display: flex;
-justify-content: center;
-flex-flow: row wrap;
-background: url(../img/unplugged-retreat.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-min-height: 500px;
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-area h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
-  line-height: 1.2em; 
+  line-height: 1.2; 
 }
 
 aside {
 display: flex;
 justify-content: center;
-flex-flow: row wrap;
-align-items: center;
 background-color: #527158;
 }
 
@@ -313,10 +293,8 @@ input[type=button] {
 .features  {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
   background-image: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
-background-repeat: no-repeat;
 background-position: center;
 min-height: 500px;
 }
